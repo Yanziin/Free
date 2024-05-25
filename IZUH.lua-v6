@@ -9,7 +9,7 @@ local Window = Fluent:CreateWindow({
     Size = UDim2.fromOffset(500, 320),
     Acrylic = true,
     Theme = "Black",
-    MinimizeKey = Enum.KeyCode.End
+    MinimizeKey = Enum.KeyCode.true
 })
 local Tabs = {
     profile = Window:AddTab({ Title = "Information", Icon = "scan-face" }),
