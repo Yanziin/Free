@@ -7841,7 +7841,7 @@ end
 
 Tabs.profile:AddParagraph({
         Title = "Owner",
-        Content = "by Kai Wibu"
+        Content = "by ig: psichott"
     })
   
 Tabs.profile:AddParagraph({
