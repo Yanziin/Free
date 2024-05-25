@@ -1,27 +1,3 @@
-local player = game.Players.LocalPlayer
-local gui = player:WaitForChild("PlayerGui") -- Get the player's PlayerGui
-
-local screenGui = Instance.new("ScreenGui")
-screenGui.Name = "MyButtonGui"
-screenGui.Parent = gui
-
-local button = Instance.new("TextButton") -- Use TextButton instead of ImageButton
-button.Name = "MyButton"
-button.Font = Enum.Font.SourceSansBold
-button.Size = UDim2.new(0, 100, 0, 50) -- Set size
-button.Position = UDim2.new(0, 10, 0.5, -25) -- Set position to the left with an X offset of 10 pixel
-button.BackgroundColor3 = Color3.fromRGB(255,255,255) -- Set button background color to red
-
-button.Text = "Stop Tween" -- Set button text
-button.Parent = screenGui
-
-local function onClick()
-    toTarget(game:GetService("Players").LocalPlayer.Character.HumanoidRootPart.CFrame)
-end
-
-button.MouseButton1Click:Connect(onClick)
-
-----------------------------------------------------------------------------------------------------------------------------------------------
 local Fluent = loadstring(game:HttpGet("https://raw.githubusercontent.com/Tienvn123tkvn/Test/main/ZINERHUB_Ui.lua"))()
 local SaveManager = loadstring(game:HttpGet("https://raw.githubusercontent.com/Tienvn123tkvn/Test/main/ZierhubManager.lua"))()
 local InterfaceManager = loadstring(game:HttpGet("https://raw.githubusercontent.com/Tienvn123tkvn/Test/main/ZierhubfaceManager.lua"))()
@@ -2534,7 +2510,7 @@ ImageButton.Parent = ScreenGui
 ImageButton.BackgroundColor3 = Color3.fromRGB(0, 0, 0)
 ImageButton.BorderSizePixel = 0
 ImageButton.Position = UDim2.new(0.120833337, 0, 0.0952890813, 0)
-ImageButton.Size = UDim2.new(0, 50, 0, 50)
+ImageButton.Size = UDim2.new(0, 42, 0, 42)
 ImageButton.Draggable = true
 ImageButton.Image = "https://create.roblox.com/store/asset/17594942433/Teste"
 ImageButton.MouseButton1Down:connect(function()
