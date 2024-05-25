@@ -9,7 +9,7 @@ local Window = Fluent:CreateWindow({
     Size = UDim2.fromOffset(500, 320),
     Acrylic = true,
     Theme = "Black",
-    MinimizeKey = Enum.KeyCode.true
+    MinimizeKey = Enum.KeyCode.end
 })
 local Tabs = {
     profile = Window:AddTab({ Title = "Information", Icon = "scan-face" }),
@@ -2508,7 +2508,7 @@ ScreenGui.ZIndexBehavior = Enum.ZIndexBehavior.Sibling
 
 ImageButton.Parent = ScreenGui
 ImageButton.BackgroundColor3 = Color3.fromRGB(0, 0, 0)
-ImageButton.BorderSizePixel = 3
+ImageButton.BorderSizePixel = 2
 ImageButton.Position = UDim2.new(0.120833337, 0, 0.0952890813, 0)
 ImageButton.Size = UDim2.new(0, 42, 0, 42)
 ImageButton.Draggable = true
