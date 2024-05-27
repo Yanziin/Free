@@ -7840,7 +7840,7 @@ function NoFog()
 end
 
 Tabs.profile:AddParagraph({
-        Title = "Owner",
+        Title = "Criador",
         Content = "by psichott"
     })
   
