@@ -5875,11 +5875,11 @@ Tabs.Teleport:AddButton({
 
 
 
-local Mastery = Tabs.Teleport:AddSection("Teleport Island")
+local Mastery = Tabs.Teleport:AddSection("Teleporta ilha")
 
 if First_Sea then
  IslandList = {
-                "moinho de vento",
+                "Moinho de vento",
                 "Marinha",
                 "Inicial",
                 "Selva",
@@ -5903,7 +5903,7 @@ elseif Second_Sea then
        IslandList = {
         "Cafe",
         "Primeiro ponto",
-        "Área escura",
+        "Árena escura",
         "Mansão flamingo",
         "Sala do flamingo",
         "Ilha verde",
@@ -5916,7 +5916,7 @@ elseif Second_Sea then
         "Castelo de gelo",
         "Ilha Esquecida",
         "Ilha do ussop",
-        "Mini Ilha do Céu",
+        "Mini ilha do céu",
        }
 
 elseif Third_Sea then
@@ -5955,103 +5955,103 @@ Tabs.Teleport:AddButton({
     Title = "Tween island",
     Description = "",
     Callback = function()
-            if _G.SelectIsland == "WindMill" then
+            if _G.SelectIsland == "Moinho de vento" then
                 toTarget(CFrame.new(979.79895019531, 16.516613006592, 1429.0466308594))
-            elseif _G.SelectIsland == "Marine" then
+            elseif _G.SelectIsland == "Marinha" then
                 toTarget(CFrame.new(-2566.4296875, 6.8556680679321, 2045.2561035156))
-            elseif _G.SelectIsland == "Middle Town" then
+            elseif _G.SelectIsland == "Inicial" then
                 toTarget(CFrame.new(-690.33081054688, 15.09425163269, 1582.2380371094))
-            elseif _G.SelectIsland == "Jungle" then
+            elseif _G.SelectIsland == "Selva" then
                 toTarget(CFrame.new(-1612.7957763672, 36.852081298828, 149.12843322754))
-            elseif _G.SelectIsland == "Pirate Village" then
+            elseif _G.SelectIsland == "Vila pirata" then
                 toTarget(CFrame.new(-1181.3093261719, 4.7514905929565, 3803.5456542969))
-            elseif _G.SelectIsland == "Desert" then
+            elseif _G.SelectIsland == "Deserto" then
                 toTarget(CFrame.new(944.15789794922, 20.919729232788, 4373.3002929688))
-            elseif _G.SelectIsland == "Snow Island" then
+            elseif _G.SelectIsland == "Ilha de neve" then
                 toTarget(CFrame.new(1347.8067626953, 104.66806030273, -1319.7370605469))
-            elseif _G.SelectIsland == "MarineFord" then
+            elseif _G.SelectIsland == "Marine Ford" then
                 toTarget(CFrame.new(-4914.8212890625, 50.963626861572, 4281.0278320313))
-            elseif _G.SelectIsland == "Colosseum" then
+            elseif _G.SelectIsland == "Coliseu" then
                 toTarget( CFrame.new(-1427.6203613281, 7.2881078720093, -2792.7722167969))
-            elseif _G.SelectIsland == "Sky Island 1" then
+            elseif _G.SelectIsland == "Ilha do céu 1" then
                 toTarget(CFrame.new(-4869.1025390625, 733.46051025391, -2667.0180664063))
-            elseif _G.SelectIsland == "Sky Island 2" then  
+            elseif _G.SelectIsland == "Ilha do céu 2" then  
                 game:GetService("ReplicatedStorage").Remotes.CommF_:InvokeServer("requestEntrance",Vector3.new(-4607.82275, 872.54248, -1667.55688))
-            elseif _G.SelectIsland == "Sky Island 3" then
+            elseif _G.SelectIsland == "Ilha do céu 3" then
                 game:GetService("ReplicatedStorage").Remotes.CommF_:InvokeServer("requestEntrance",Vector3.new(-7894.6176757813, 5547.1416015625, -380.29119873047))
-            elseif _G.SelectIsland == "Prison" then
+            elseif _G.SelectIsland == "Prisão" then
                 toTarget( CFrame.new(4875.330078125, 5.6519818305969, 734.85021972656))
-            elseif _G.SelectIsland == "Magma Village" then
+            elseif _G.SelectIsland == "Vila magma" then
                 toTarget(CFrame.new(-5247.7163085938, 12.883934020996, 8504.96875))
-            elseif _G.SelectIsland == "Under Water Island" then
+            elseif _G.SelectIsland == "Ilha debaixo d'água" then
                 game:GetService("ReplicatedStorage").Remotes.CommF_:InvokeServer("requestEntrance",Vector3.new(61163.8515625, 11.6796875, 1819.7841796875))
-            elseif _G.SelectIsland == "Fountain City" then
+            elseif _G.SelectIsland == "Cidade da fonte" then
                 toTarget(CFrame.new(5127.1284179688, 59.501365661621, 4105.4458007813))
-            elseif _G.SelectIsland == "Shank Room" then
+            elseif _G.SelectIsland == "Sala da haste" then
                 toTarget(CFrame.new(-1442.16553, 29.8788261, -28.3547478))
-            elseif _G.SelectIsland == "Mob Island" then
+            elseif _G.SelectIsland == "Ilha Modo" then
                 toTarget(CFrame.new(-2850.20068, 7.39224768, 5354.99268))
-            elseif _G.SelectIsland == "The Cafe" then
+            elseif _G.SelectIsland == "Cafe" then
                 game:GetService("ReplicatedStorage").Remotes.CommF_:InvokeServer("requestEntrance",Vector3.new(-281.93707275390625, 306.130615234375, 609.280029296875))
                 wait(0.1)
                 Tween2(CFrame.new(-380.47927856445, 77.220390319824, 255.82550048828))
-            elseif _G.SelectIsland == "Frist Spot" then
+            elseif _G.SelectIsland == "Primeiro ponto" then
                 toTarget(CFrame.new(-11.311455726624, 29.276733398438, 2771.5224609375))
-            elseif _G.SelectIsland == "Dark Area" then
+            elseif _G.SelectIsland == "Árena escura" then
                 toTarget(CFrame.new(3780.0302734375, 22.652164459229, -3498.5859375))
-            elseif _G.SelectIsland == "Flamingo Mansion" then
+            elseif _G.SelectIsland == "mansão flamingo" then
                 game:GetService("ReplicatedStorage").Remotes.CommF_:InvokeServer("requestEntrance",Vector3.new(-281.93707275390625, 306.130615234375, 609.280029296875))
-            elseif _G.SelectIsland == "Flamingo Room" then
+            elseif _G.SelectIsland == "Sala flamingo" then
                 game:GetService("ReplicatedStorage").Remotes.CommF_:InvokeServer("requestEntrance",Vector3.new(2284.912109375, 15.152034759521484, 905.48291015625))
-            elseif _G.SelectIsland == "Green Zone" then
+            elseif _G.SelectIsland == "Ilha verde" then
                 toTarget( CFrame.new(-2448.5300292969, 73.016105651855, -3210.6306152344))
-            elseif _G.SelectIsland == "Factory" then
+            elseif _G.SelectIsland == "Fábrica" then
                 toTarget(CFrame.new(424.12698364258, 211.16171264648, -427.54049682617))
-            elseif _G.SelectIsland == "Colossuim" then
+            elseif _G.SelectIsland == "Coliseu" then
                 toTarget( CFrame.new(-1503.6224365234, 219.7956237793, 1369.3101806641))
-            elseif _G.SelectIsland == "Zombie Island" then
+            elseif _G.SelectIsland == "Ilha zombie" then
                 toTarget(CFrame.new(-5622.033203125, 492.19604492188, -781.78552246094))
-            elseif _G.SelectIsland == "Two Snow Mountain" then
+            elseif _G.SelectIsland == "Monte nevado" then
                 toTarget(CFrame.new(753.14288330078, 408.23559570313, -5274.6147460938))
-            elseif _G.SelectIsland == "Punk Hazard" then
+            elseif _G.SelectIsland == "Meio quente e frio" then
                 toTarget(CFrame.new(-6127.654296875, 15.951762199402, -5040.2861328125))
-            elseif _G.SelectIsland == "Cursed Ship" then
+            elseif _G.SelectIsland == "Navio amaldiçoado" then
                 game:GetService("ReplicatedStorage").Remotes.CommF_:InvokeServer("requestEntrance",Vector3.new(923.40197753906, 125.05712890625, 32885.875))
-            elseif _G.SelectIsland == "Ice Castle" then
+            elseif _G.SelectIsland == "Castelo de gelo" then
                 toTarget(CFrame.new(6148.4116210938, 294.38687133789, -6741.1166992188))
-            elseif _G.SelectIsland == "Forgotten Island" then
+            elseif _G.SelectIsland == "Ilha Esquecida" then
                 toTarget(CFrame.new(-3032.7641601563, 317.89672851563, -10075.373046875))
-            elseif _G.SelectIsland == "Ussop Island" then
+            elseif _G.SelectIsland == "Ilha do ussop" then
                 toTarget(CFrame.new(4816.8618164063, 8.4599885940552, 2863.8195800781))
-            elseif _G.SelectIsland == "Mini Sky Island" then
+            elseif _G.SelectIsland == "Mini ilha do céu" then
                 Tween2(CFrame.new(-288.74060058594, 49326.31640625, -35248.59375))
-            elseif _G.SelectIsland == "Great Tree" then
+            elseif _G.SelectIsland == "Grande Árvore" then
                 toTarget(CFrame.new(2681.2736816406, 1682.8092041016, -7190.9853515625))
-            elseif _G.SelectIsland == "Castle On The Sea" then
+            elseif _G.SelectIsland == "Castelo" then
                 game:GetService("ReplicatedStorage").Remotes.CommF_:InvokeServer("requestEntrance",Vector3.new(-5075.50927734375, 314.5155029296875, -3150.0224609375))
-            elseif _G.SelectIsland == "MiniSky" then
+            elseif _G.SelectIsland == "Mini céu" then
                 Tween2(CFrame.new(-260.65557861328, 49325.8046875, -35253.5703125))
-            elseif _G.SelectIsland == "Port Town" then
+            elseif _G.SelectIsland == "Porto" then
                 toTarget(CFrame.new(-290.7376708984375, 6.729952812194824, 5343.5537109375))
-            elseif _G.SelectIsland == "Hydra Island" then
+            elseif _G.SelectIsland == "Ilha hidra" then
                 game:GetService("ReplicatedStorage").Remotes.CommF_:InvokeServer("requestEntrance",Vector3.new(5753.5478515625, 610.7880859375, -282.33172607421875))
-            elseif _G.SelectIsland == "Floating Turtle" then
+            elseif _G.SelectIsland == "Tartaruga flutuante" then
                 toTarget(CFrame.new(-13274.528320313, 531.82073974609, -7579.22265625))
-            elseif _G.SelectIsland == "Mansion" then
+            elseif _G.SelectIsland == "Mansão" then
                 game:GetService("ReplicatedStorage").Remotes.CommF_:InvokeServer("requestEntrance",Vector3.new(-12468.5380859375, 375.0094299316406, -7554.62548828125))
-            elseif _G.SelectIsland == "Haunted Castle" then
+            elseif _G.SelectIsland == "Castelo assombrado" then
                 toTarget(CFrame.new(-9515.3720703125, 164.00624084473, 5786.0610351562))
-            elseif _G.SelectIsland == "Ice Cream Island" then
+            elseif _G.SelectIsland == "Ilha do Sorvete" then
                 toTarget(CFrame.new(-902.56817626953, 79.93204498291, -10988.84765625))
-            elseif _G.SelectIsland == "Peanut Island" then
+            elseif _G.SelectIsland == "Ilha do Amendoim" then
                 toTarget(CFrame.new(-2062.7475585938, 50.473892211914, -10232.568359375))
-            elseif _G.SelectIsland == "Cake Island" then
+            elseif _G.SelectIsland == "Ilha do Bolo" then
                 toTarget(CFrame.new(-1884.7747802734375, 19.327526092529297, -11666.8974609375))
-            elseif _G.SelectIsland == "Cocoa Island" then
+            elseif _G.SelectIsland == "Ilha do Cacau" then
                 toTarget(CFrame.new(87.94276428222656, 73.55451202392578, -12319.46484375))
-            elseif _G.SelectIsland == "Candy Island" then
+            elseif _G.SelectIsland == "Ilha dos Doces" then
                 toTarget(CFrame.new(-1014.4241943359375, 149.11068725585938, -14555.962890625))
-            elseif _G.SelectIsland == "Tiki Outpost" then
+            elseif _G.SelectIsland == "Posto Avançado Tiki" then
                 toTarget(CFrame.new(-16542.447265625, 55.68632888793945, 1044.41650390625))
             end
         end
