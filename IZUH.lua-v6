@@ -2542,11 +2542,11 @@ local listfastattack = {'Normal','Slow','Super','Low'}
     DropdownDelayAttack:OnChanged(function(Value)
     _G.FastAttackZINER_Mode = Value
 	if _G.FastAttackWinterhub_Mode == "Slow" then
-		_G.Fast_Delay = 0.5
+		_G.Fast_Delay = 0.7
 	elseif _G.FastAttackWinterhub_Mode == "Normal" then
-		_G.Fast_Delay = 0.3
+		_G.Fast_Delay = 0.4
 	elseif _G.FastAttackWinterhub_Mode == "Super" then
-		_G.Fast_Delay = 0.1
+		_G.Fast_Delay = 0.2
 	elseif _G.FastAttackWinterhub_Mode == "Low" then
 		_G.Fast_Delay = 0
 	 end
@@ -2605,7 +2605,7 @@ local listfastattack = {'Normal','Slow','Super','Low'}
 
 
     local ToggleLevel = Tabs.Main:AddToggle("ToggleLevel", {
-        Title = "Auto Farm Level",
+        Title = "Farma Level",
         Description = "",
         Default = false })
     ToggleLevel:OnChanged(function(Value)
